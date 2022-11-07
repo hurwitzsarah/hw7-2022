@@ -76,12 +76,12 @@ document.querySelector("#slider").addEventListener("click", function() {
 
 // old school
 document.querySelector("#vintage").addEventListener("click", function() {
-	this.classList.add("oldSchool");
-	console.log("old school view");
+	video.classList.add("oldSchool");
+	console.log("Apply old school view");
 });
 
 // original
 document.querySelector("#orig").addEventListener("click", function() {
-	document.querySelector("#vintage").classList.remove("oldSchool");
-	console.log("remove old school view");
+	video.classList.remove("oldSchool");
+	console.log("Removed old school view");
 });
