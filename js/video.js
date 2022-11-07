@@ -33,7 +33,7 @@ document.querySelector("#slower").addEventListener("click", function() {
 // speed up the video
 document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Speed up")
-	video.playbackRate *=1.1;
+	video.playbackRate /=.9;
 	console.log("Speed is", video.playbackRate)
 });
 
@@ -70,7 +70,7 @@ document.querySelector("#slider").addEventListener("click", function() {
 	slider.min = 0;
 	slider.max = 100;
 	video.volume = slider.value / 100;
-	console.log('Volume is' + video.volume);
+	console.log('Volume is ' + video.volume);
 	document.querySelector('#volume').innerHTML = video.volume * 100 + "%";
 });
 
